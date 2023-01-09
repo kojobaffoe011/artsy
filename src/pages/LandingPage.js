@@ -12,7 +12,7 @@ import egypt3 from "../assets/images/egypt3.png";
 import avatars from "../assets/images/avatars.svg";
 import forward from "../assets/icons/forward.svg";
 import arrow from "../assets/icons/arrow.svg";
-import left from "../assets/icons/left.svg";
+import bluearrow from "../assets/icons/bluearrow.svg";
 import right from "../assets/icons/right.svg";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
@@ -233,6 +233,31 @@ const UpcomingAuctions = () => {
   );
 };
 
+const Links = () => {
+  return (
+    <div className="my-24">
+      <div className="border-y py-[60px] pl-[78px] pr-[300px] flex justify-between items-center">
+        <div>
+          <p className="text-[#333333] text-3xl">Explore marketplace</p>
+        </div>
+
+        <div>
+          <img src={bluearrow} alt="" />
+        </div>
+      </div>
+      <div className="border-b py-[60px] pl-[78px] pr-[300px] flex justify-between items-center">
+        <div>
+          <p className="text-[#333333] text-3xl">See auctions </p>
+        </div>
+
+        <div>
+          <img src={bluearrow} alt="" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const LandingPage = () => {
   return (
     <div className="flex flex-col min-h-screen max-w-[1440px] mx-auto">
@@ -254,6 +279,7 @@ const LandingPage = () => {
         <Carousel />
         <FeaturedProducts />
         <UpcomingAuctions />
+        <Links />
       </div>
       <Footer />
     </div>

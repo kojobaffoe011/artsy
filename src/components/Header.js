@@ -11,10 +11,18 @@ const Header = () => {
         <p className="font-stix font-extrabold text-2xl">ARTSY.</p>
       </div>
       <div className="flex space-x-8">
-        <p className="hover:underline font-bold">Home</p>
-        <p className="hover:underline font-light">Marketplace</p>
-        <p className="hover:underline font-light">Auctions</p>
-        <p className="hover:underline font-light">Drop</p>
+        <p className="hover:underline hover:underline-offset-8 font-bold">
+          Home
+        </p>
+        <p className="hover:underline hover:underline-offset-8 font-light">
+          Marketplace
+        </p>
+        <p className="hover:underline hover:underline-offset-8 font-light">
+          Auctions
+        </p>
+        <p className="hover:underline hover:underline-offset-8 font-light">
+          Drop
+        </p>
       </div>
       <div className="flex space-x-8 items-center">
         <div>
