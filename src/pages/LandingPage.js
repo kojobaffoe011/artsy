@@ -11,6 +11,10 @@ import egypt2 from "../assets/images/egypt2.png";
 import egypt3 from "../assets/images/egypt3.png";
 import avatars from "../assets/images/avatars.svg";
 import forward from "../assets/icons/forward.svg";
+import arrow from "../assets/icons/arrow.svg";
+import left from "../assets/icons/left.svg";
+import right from "../assets/icons/right.svg";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Carousel = () => {
   return (
@@ -53,7 +57,7 @@ const FeaturedProducts = () => {
         <p className="text-[48px]">Featured products</p>
       </div>
       <div className="flex pt-[61px] pb-[74px] border-t border-[#333333]">
-        <div>
+        <div className="">
           <img src={egypt1} alt="" />
         </div>
         <div className="flex flex-col ml-[37px]">
@@ -149,10 +153,90 @@ const FeaturedProducts = () => {
   );
 };
 
+const UpcomingAuctions = () => {
+  return (
+    <div className="px-[120px] border px-[120px] flex flex-col bg-upcome">
+      <div className="mt-4 mb-8">
+        <div className="mb-2">
+          <p className="text-[40px] text-white">
+            See Upcoming Auctions and Exhibitions
+          </p>
+        </div>
+        <div className="mb-4 ml-4 max-w-[667px] px-[20px]">
+          <img src={arrow} alt="" />
+        </div>
+      </div>
+      <div className="bg-[url('/src/assets/images/auction.png')] bg-cover bg-no-repeat w-full h-[70vh] mb-4">
+        <div className="h-[70vh] bg-black bg-opacity-80 flex w-full relative px-[38px] pb-[60px] flex justify-between">
+          <div className="flex flex-col justify-end">
+            <div className="flex">
+              <div className="flex items-center mr-4">
+                <p className="text-[#E1E1E1] text-[67.6122px] font-belle">01</p>
+              </div>
+              <div className="flex flex-col justify-end">
+                <div className="mb-4">
+                  <p className="text-white font-belle text-[29.2313px]">
+                    MONALISA REDEFINED <br />
+                    IN STYLE.
+                  </p>
+                </div>
+                <div className="mb-4">
+                  <p className="text-white font-pop">
+                    Start on : 08:00 GTS . Monday{" "}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-white">
+                    GET EXCLUSIVE VIEWING OF CONTEMPORARY ART AND CONNECT WITH
+                    <br />
+                    INVESTORS AND AUCTIONEERS ACROSS THE WORLD BRINGING THEIR
+                    <br />
+                    HIGHEST AND LOWEST BIDS.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-end">
+            <div className="flex items-center">
+              <div className="mr-[42px]">
+                <p className="underline text-white text-lg">See more</p>
+              </div>
+              <div>
+                <button className="border p-[15px] rounded-lg">
+                  <p className="text-white ">Set a reminder</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between items-center mb-8">
+        <div className="bg-[#AEAEAE] rounded-lg w-[20%] h-[10px]">
+          <div className="bg-white rounded-lg w-[30%] border h-[10px]"></div>
+        </div>
+        <div className="flex">
+          <div className=" backdrop-blur flex rounded-full items-center justify-center w-16 h-16 shadow-2xl mr-8">
+            <div>
+              <FaChevronLeft color="white" />
+            </div>
+          </div>
+          <div className="backdrop-blur flex rounded-full items-center justify-center w-16 h-16 shadow-2xl mr-4">
+            <div>
+              <FaChevronRight color="white" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const LandingPage = () => {
   return (
     <div className="flex flex-col min-h-screen max-w-[1440px] mx-auto">
-      <Header />
+      <Header />s
       <div className="flex flex-col">
         <div className="flex items-center justify-center">
           <p className="font-bold font-clash lg:text-[80px] text-center">
@@ -169,8 +253,8 @@ const LandingPage = () => {
         </div>
         <Carousel />
         <FeaturedProducts />
+        <UpcomingAuctions />
       </div>
-
       <Footer />
     </div>
   );
