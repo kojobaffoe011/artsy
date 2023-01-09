@@ -13,7 +13,7 @@ import avatars from "../assets/images/avatars.svg";
 import forward from "../assets/icons/forward.svg";
 import arrow from "../assets/icons/arrow.svg";
 import bluearrow from "../assets/icons/bluearrow.svg";
-import right from "../assets/icons/right.svg";
+import babe from "../assets/images/babe.png";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Carousel = () => {
@@ -258,6 +258,61 @@ const Links = () => {
   );
 };
 
+const TopCreators = () => {
+  return (
+    <div className="bg-[#E2E2E2] px-[102px] mb-36 relative">
+      <div className="mt-12">
+        <p className="font-clash text-[55px] font-bold">
+          TOP CREATORS OF <br /> THE WEEK
+        </p>
+      </div>
+      <div className="mt-24 mb-40">
+        <p className="text-[30px] text-gray-400 font-light">
+          “Everything always looked better in black and white. Everything always
+          as if it <br /> were the first time; there’s always more people in a
+          black and white <br />
+          photograph. It just makes it seem that there were more
+          <br /> people at a gig, more people at a football match, than with
+          colour photography. <br />
+          Everything looks more exciting.”– Jack Lowden
+        </p>
+      </div>
+      <div className="absolute top-[16%] h-[80vh] left-[30%] w-[45%] bg-babe">
+        <div className="absolute z-20">
+          <img src={babe} alt="" />
+        </div>
+        <div className="absolute bottom-[10%] right-[-12%]">
+          <p className="text-[170px] font-extrabold line-through font-clash">
+            1985
+          </p>
+        </div>
+        <div className="absolute bottom-[45%] right-[14%]">
+          <p className="text-[48px] font-extrabold font-clash">CIRCA</p>
+        </div>
+        <div className="absolute top-[-10%] right-[-10%] flex">
+          <div className="bg-[#AEAEAE] h-[235px] rounded-lg mr-8 flex flex-col justify-end">
+            <div className="rounded-lg bg-black h-[48px]">a</div>
+          </div>
+          <div className="flex flex-col">
+            <div>
+              <p className="text-[40px] font-light">Editorials</p>
+            </div>
+            <div>
+              <p className="text-[40px] font-light">Fashion</p>
+            </div>
+            <div>
+              <p className="text-[40px] font-light">Lifestyle</p>
+            </div>
+            <div>
+              <p className="text-[40px] font-light">Blueprint</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const LandingPage = () => {
   return (
     <div className="flex flex-col min-h-screen max-w-[1440px] mx-auto">
@@ -280,6 +335,7 @@ const LandingPage = () => {
         <FeaturedProducts />
         <UpcomingAuctions />
         <Links />
+        <TopCreators />
       </div>
       <Footer />
     </div>
