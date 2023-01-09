@@ -14,7 +14,7 @@ import forward from "../assets/icons/forward.svg";
 
 const Carousel = () => {
   return (
-    <div className="border flex space-x-[20px] mt-[80px] mb-[100px]">
+    <div className="flex space-x-[20px] mt-[80px] mb-[100px]">
       <div className="flex items-center mt-[50px]">
         <img src={firstCaro} alt="" />
       </div>
@@ -48,7 +48,7 @@ const FeaturedProductsImages = [
 
 const FeaturedProducts = () => {
   return (
-    <div className="px-[120px] border flex flex-col">
+    <div className="px-[120px] flex flex-col">
       <div className="mb-[37px]">
         <p className="text-[48px]">Featured products</p>
       </div>
