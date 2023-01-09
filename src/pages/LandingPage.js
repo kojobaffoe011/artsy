@@ -83,6 +83,68 @@ const FeaturedProducts = () => {
           </div>
         </div>
       </div>
+      <div className="flex pt-[61px] pb-[74px] justify-between border-t border-[#333333]">
+        <div className="flex flex-col mr-[37px]">
+          <div className="mb-[38px]">
+            <p className="font-stix font-bold text-[40px]">
+              The Boolean Egyptian
+            </p>
+          </div>
+          <div className="mb-[30px]">
+            <p className="font-light text-[20px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+              elit ut aliquam, purus sit amet luctus venenatis, <br />
+              lectus magna fringilla urna, porttitor rhoncus dolor <br />
+              pur
+            </p>
+          </div>
+          <div className="mb-[38px] flex items-center">
+            <div className="flex w-full">
+              <img src={avatars} alt="" />
+            </div>
+            <div className="flex w-full items-center ml-[20px] text-[20px] justify-end">
+              <p className="whitespace-nowrap">64 major creators</p>
+            </div>
+            <div className="flex items-center w-full justify-end">
+              <img src={forward} />
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src={egypt2} alt="" />
+        </div>
+      </div>
+      <div className="flex pt-[61px] pb-[74px] border-t border-[#333333]">
+        <div>
+          <img src={egypt3} alt="" />
+        </div>
+        <div className="flex flex-col ml-[37px]">
+          <div className="mb-[38px]">
+            <p className="font-stix font-bold text-[40px]">
+              The Boolean Egyptian
+            </p>
+          </div>
+          <div className="mb-[30px]">
+            <p className="font-light text-[20px]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+              elit ut aliquam, purus sit amet luctus venenatis, <br />
+              lectus magna fringilla urna, porttitor rhoncus dolor <br />
+              pur
+            </p>
+          </div>
+          <div className="mb-[38px] flex items-center">
+            <div className="flex w-full">
+              <img src={avatars} alt="" />
+            </div>
+            <div className="flex w-full items-center ml-[20px] text-[20px] justify-end">
+              <p className="whitespace-nowrap">64 major creators</p>
+            </div>
+            <div className="flex items-center w-full justify-end">
+              <img src={forward} />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
